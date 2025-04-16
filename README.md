@@ -4,6 +4,7 @@ This Python script fetches stock data from CSV files and visualizes **Bollinger 
 This project was used in gaining familiarity with Pandas and Matplotlib functionalities.
 
 Objectives include:
+
 - Familiarity with reading data from a csv
 - Manipulating, slicing, and indexing data from a Pandas DataFrame
 - Performing operations on arrays
@@ -54,31 +55,38 @@ python bollinger_bands.py
 You can modify these values directly in `bollinger_bands.py` to customize the script:
 
 ### 📅 Date Range
+
 Set the time period for the data you want to analyze:
+
 ```python
 start_date = '2012-01-01'
 end_date = '2012-12-31'
 ```
 
 ### 📈 Tickers
+
 Only stock tickers analyzed in this project is SPY
+
 ```python
 tickers = ['SPY']
 ```
 
 ### 🪟 Rolling Window
+
 Adjust the number of days for calculating the rolling mean and standard deviation:
+
 ```python
 window = 20
 ```
 
 ### 📊 Output
+
+![Bollinger Bands Chart](images/bollinger_bands.png)
+
 The script displays a line chart showing:
 
-Actual stock price (SPY)
-
-20-day rolling mean
-
-Bollinger upper and lower bands
+- Actual stock price (SPY)
+- 20-day rolling mean
+- Bollinger upper and lower bands
 
 All values are aligned by date.
